@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import ColorBox from "./ColorBox";
-import "rc-slider/assets/index.css";
+import Navbar from "./Navbar"
+
 // order of styles is important here because they might override eachother
 import "./Palette.css";
-import Slider, { Range } from "rc-slider";
+
 
 
 class Palette extends Component {
@@ -28,16 +29,7 @@ class Palette extends Component {
     );
     return (
       <div className="Palette">
-        <div className="slider">
-        <Slider
-          defaultValue={level}
-          min={100}
-          max={900}
-          onChange={this.changeLevel}
-          step={100}
-        />
-        </div>
-       
+        <Navbar level={level} changeLevel={this.changeLevel}/>
         {/* navbar goes here */}
         <div className="Palette-colors">{colorBoxes}</div>
         {/* footer goes here */}
