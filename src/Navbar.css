@@ -31,6 +31,7 @@
 
 .slider-container span {
     font-weight: 600;
+    margin-right: 10px;
 }
 
 .rc-slider-track {
@@ -39,6 +40,7 @@
 
 .rc-slider-rail {
     height: 8px;
+    background: lightgray;
 }
 
 .rc-slider-handle, .rc-slider-handle:hover, .rc-slider-handle:active, .rc-slider-handle:focus  {
